@@ -1,0 +1,161 @@
+@media screen and (max-width: 1024px) {
+    .resp {
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .statistics {
+        text-align: center;
+    }
+    .statistics p {
+        margin: 0 auto;
+    }
+    .author {
+        max-width: 700px;
+        text-align: center;
+        padding: 40px;
+    }
+    .experience {
+        justify-content: center;
+    }
+    .author__more {
+        margin: 0 auto;
+    }
+    .hm {
+        text-align: center;
+    }
+    .hm p {
+        margin: 0 auto;
+    }
+    .money {
+        padding: 40px 0;
+    }
+    .show__how {
+        text-align: center;
+    }
+    .list {
+        padding: 20px 0;
+        flex-flow: column wrap;
+    }
+    .list li {
+        margin-left: 20px;
+    }
+    [class*="list__item_"]  {
+        padding-bottom: 50px;
+    }
+   
+    .thanks__text h2 {
+        text-align: center;
+        margin: 40px auto;
+    }
+    .youcan {
+        background: none;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .dissatisfied {
+        
+    }
+    .dissatisfied__web {
+        margin-left: -70px;
+    }
+    .if h2 {
+        text-align: center;
+    }
+
+    .checkin__form {
+        text-align: center;
+    }
+    input {
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+    section {
+        padding: 30px 0;
+    }
+    header {
+        padding: 30px 0;
+        background-position: left center;
+    }
+    .title {
+        font-size: 1.2em;
+        background: url(../img/last.png) no-repeat center;
+        width: 320px;
+        padding: 130px 0 0;
+        margin: 0 auto 40px;
+        text-align: center;
+    }
+    header h1 {
+        font-size: 1.3em;
+        text-align: center;
+        margin: 10px auto;
+        min-width: 320px;
+        padding: 0;
+    }
+    .description__btn {
+        margin-left: 3%;
+    }
+    h2 {
+        font-size: 35px;
+    }
+    .statistics,
+    .hm {
+        width: 100%;
+        min-width: 320px;
+    }
+    .statistics p,
+    .hm p {
+        min-width: 320px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .author {
+        padding: 40px 20px;
+    }
+    .experience {
+        padding: 0;
+    }
+    [class*="list__item_"]{
+        margin-bottom: 20px;
+    }
+    .list p {
+        font-size: 15px;
+    }
+    .show {
+        background: none;
+    }
+    .thanks__photo {
+        display: none;
+    }
+    .youcan {
+        margin: 0;
+        padding: 0;
+    }
+    .dissatisfied {
+        align-items: baseline;
+    }
+    .dissatisfied__sal,
+    .dissatisfied__web {
+        margin: 0 0 20px 20px;
+        padding-bottom: 10px;
+    }
+    .time h4 {
+        font-size: 30px;
+        text-align: center;
+    }
+    .time h4 span {
+        background: none;
+    }
+    .time p span {
+        margin: 0 10px;
+    }
+    
+}

@@ -1,0 +1,395 @@
+/* ----- Спецификация -----*/
+html {
+    overflow-x: hidden;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+    padding: 0;
+	margin: 0;
+	font-size: 22px;
+	color: #000;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-transform: uppercase;
+	font-weight: 800;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+	font-size: 58px;
+    font-weight: 900;
+}
+
+div, section, form, button, span, p {
+	box-sizing: border-box;
+}
+
+section {
+	padding: 82px;
+}
+
+input, button {
+	font-family: 'Open Sans', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+    width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+    min-width: 320px;
+}
+
+.flex {
+	display: flex;
+}
+
+.yellow {
+	color: #ffde00;
+}
+.grey {
+    color: #646464;
+    font-size: 15px;
+    font-weight: 300;
+}
+.black {
+    color: #000;
+    font-weight: 700;
+}
+
+.button {
+    font-family: inherit;
+	color: #000;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 900;
+	width: 300px;
+	border: none;
+	background-color: #ffde00;
+	cursor: pointer;
+	padding: 30px 0;
+    box-shadow: 1px 0px 40px rgba(0, 0, 0, .2);
+	-webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    position: relative;
+    outline: none;
+}
+.button:hover {
+    box-shadow: 1px 0px 60px rgba(0, 0, 0, .5);
+}
+.button:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
+    outline: none;
+}
+.button:active {
+    background-color: #ffde00;
+}
+/*------header------*/
+
+header {
+    padding: 100px 0 85px;
+    background: url(../img/andrew.jpg) no-repeat center;
+    background-size: auto 100%;
+}
+.title {
+    font-weight: 300;
+    font-size: 48px;
+    background: url(../img/last.png) no-repeat left center;
+    height: 117px;
+    padding-left: 133px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    width: 500px;
+}
+header h1 {
+    width: 100%;
+    max-width: 700px;
+    font-size: 61px;
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+.description {
+    margin-bottom: 50px;
+}
+.description li{
+    font-size: 19px;
+    font-weight: 300;
+    background: url(../img/list.jpg) no-repeat left center;
+    padding: 5px 0 5px 35px;
+}
+/*------2ns section reason with elements from next section-----*/
+
+.reason {
+    padding: 0;
+}
+.statistics,
+.hm {
+    width: 100%;
+    max-width: 700px;
+}
+.statistics h2,
+.hm h2{
+    margin: 85px 0 40px;
+}
+.statistics p,
+.hm p {
+    font-size: 22px;
+    font-weight: 300;
+    width: 26em;
+    margin: 0 0 85px;
+}
+
+.author {
+    background-color: #ededed;
+    width: 100%;
+    max-width: 460px;
+    padding: 75px 0 75px 45px;
+    color: #454545;
+}
+.author span {
+    display: block;
+}
+.author__name {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 19px;
+    text-transform: uppercase;
+}
+.author__prof {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 35px;
+}
+.experience__number {
+    font-size: 39px;
+    font-weight: 700;
+}
+.experience__text {
+    font-size: 12px;
+    font-weight: 700;
+    padding: 10px 35px 10px 10px;
+    text-transform: uppercase;
+}
+.author__more {
+    font-family: inherit;
+    font-size: 17px;
+    font-weight: 300;
+    color: #000;
+    border-bottom: 1px dotted #454545;
+    width: 8em;
+    padding-bottom: 2px;
+    margin: 33px 0 0;
+    display: block;
+}
+/*-------black section 3d -----*/
+.why {
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+.money {
+    text-align: center;
+    color: #000;
+    width: 100%;
+    max-width: 460px; 
+    background-color: #ffde00;
+    padding: 107px 0;
+}
+.money span {
+    font-size: 34px;
+    font-weight: 900;
+}
+/*-------4th section show-------*/
+.show {
+     background: url(../img/sentence.jpg) no-repeat bottom center;
+}
+
+.list {
+    padding: 95px 0 107px;
+    justify-content: space-between;
+}
+.list h5 {
+    resize: 21px;
+    font-weight: 900;
+}
+.list p {
+    font-size: 18px;
+    font-weight: 300;
+    margin: 17px 0 0;
+}
+[class*="list__item_"]{
+    padding-left: 120px;
+}
+.list__item_one {
+    background: url(../img/1.png) no-repeat left top;
+}
+.list__item_two {
+     background: url(../img/2.png) no-repeat left top;
+}
+.list__item_three {
+     background: url(../img/3.png) no-repeat left top;
+}
+
+/*----section 5th thanks----*/
+.thanks__text h2 {
+    max-width: 8em;
+    margin-bottom: 58px;
+} 
+    
+.changes li {
+    background: url(../img/blyelsq.jpg) no-repeat left 4px;
+    padding-left: 50px;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 25px;
+    
+}
+.changes p {
+    margin: 0 0 6px;
+}
+.youcan {
+    background: url(../img/yelsq.jpg) no-repeat left 2px;
+    padding-left: 52px;
+    margin-top: 71px;
+    font-size: 34px;
+    font-weight: 900;
+}
+.thanks__photo {
+    height: 470px;
+    margin-left: 75px;
+    margin-top: 15    px;
+}
+/*------6th section black if-----*/
+.if {
+    color: #fff;
+    background-color: #000;
+    
+}
+.dissatisfied {
+    margin-top: 30px;
+}
+.dissatisfied__web {
+    background: url(../img/stud.png) no-repeat  left center;
+    padding-left: 91px;
+}
+.dissatisfied__sal {
+    background: url(../img/wallet.png) no-repeat  left center;
+    padding-left: 84px;
+    margin-left: 30px;
+}
+/*--------small 7th section time---------*/
+
+.time {
+    padding:0;
+}
+.time h4 {
+    font-size: 37px;
+    padding: 20px;
+}
+.time p {
+    font-size: 19px;
+    font-weight: 300;
+    margin: 0;
+    line-height: 4.2em;
+    padding: 0 20px;
+}
+.time p span {
+    margin: 0 20px;
+}
+.time h4 span {
+    background-color: #ffde00;
+    padding: 20px;
+}
+/*------8th section checkin---yellow--------*/
+.checkin {
+    background-color: #ffde00;
+}
+.special {
+    padding: 4px;
+}
+input {
+    width: 295px;
+    height: 65px;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 300;
+    padding-left: 35px;
+    border: none;
+    margin-right: 15px;
+}
+.checkin__fill {
+    font-size: 23px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    margin: 80px 0 40px;
+}
+.checkin__fill span{
+    background-color: #000;
+}
+.form__btn {
+    width: 225px;
+    height: 65px;
+    padding: 0;
+}
+.checkin__data {
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 40px 0 0;
+}
+
+/*----footer-------------*/
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 60px 0;
+}
+.justify {
+    justify-content: space-between;
+}
+footer p {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    margin-right: 90px;
+}
+.wait {
+    font-weight: 900;
+    margin-left: 40px;
+}
